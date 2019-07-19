@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Cheap Webapp</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: grid;
+            border-style: solid;
+            border-color: red;
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 1em;
+            padding: 3em;
+            margin: 10em auto;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            display: grid;
+            align-items: center;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+
+        .wrapper > div > a {
+            text-decoration: none;
+            color: #333;
+            display: grid;
+            justify-content: center;
+            padding: 5em;
+            transition: all.9s;
+            align-items: center;
+            height: 100%;
+        }
+
+        .wrapper > div > a:hover {
+            background: #178686;
+            color: #fff;
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <div>
+                <a href="horizontal/index.html">
+                    Website
+                </a>
+            </div>
+            <div>
+                <a href="admin/index.html">
+                    Admin Site
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
